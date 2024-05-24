@@ -22,14 +22,14 @@ const userSchema = new mongoose.Schema({
   phone: {
     type: String,
     required: [true, "Phone Is Required!"],
-    minLength: [11, "Phone Number Must Contain Exact 11 Digits!"],
-    maxLength: [11, "Phone Number Must Contain Exact 11 Digits!"],
+    minLength: [10, "Phone Number Must Contain Exact 11 Digits!"],
+    maxLength: [10, "Phone Number Must Contain Exact 11 Digits!"],
   },
   aadharNumber: {
     type: String,
     required: [true, "aadharNumber Is Required!"],
-    minLength: [13, "aadharNumber Must Contain Only 13 Digits!"],
-    maxLength: [13, "aadharNumber Must Contain Only 13 Digits!"],
+    minLength: [12, "aadharNumber Must Contain Only 13 Digits!"],
+    maxLength: [12, "aadharNumber Must Contain Only 13 Digits!"],
   },
   dob: {
     type: Date,
